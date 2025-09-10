@@ -80,7 +80,7 @@ A lightweight KAT harness is included (parses NIST `.rsp` files and checks pk/sk
   KAT_RSP=/nistkat/PQCkemKAT_2400.rsp
   ```
 * Run the test (see `nistkat/test_kat_runner.nim` in the repo).
-* Compile with flag -d:kat
+* Compile with flag `-d:kat`
 
 The API also has deterministic hooks (coins) to mirror the reference flow.
 
