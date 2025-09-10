@@ -1,6 +1,5 @@
 # src/rng_aes.nim
 # Minimal AES-256 ECB single-block primitive for rng.c DRBG parity
-# Depends on your existing Rijndael port: stateInit, rijndaelEncrypt, BlockState
 
 include rijndael
 
