@@ -3,6 +3,8 @@ import ../src/params
 import ../src/kem
 import rng
 
+# NOTE: compile with -d:kat
+
 # --- helpers ---------------------------------------------------------------
 
 proc unhex(s: string): seq[byte] =
