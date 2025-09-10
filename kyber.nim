@@ -67,7 +67,7 @@ when isMainModule:
   let bob   = generateKeys()
   # Alice sends alice.publicKey to Bob; Bob sends bob.publicKey to Alice.
 
-  # --- Step 2: Bob starts a session with Alice’s public key ---
+  # --- Step 2: Bob creates an envelope with Alice’s public key ---
   let (envForAlice, bobSessionKey) = createEnvelope(alice.publicKey)
   # Bob sends `envForAlice` to Alice (over the network, email, etc.).
 
