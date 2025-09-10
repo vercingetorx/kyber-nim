@@ -1,4 +1,4 @@
-# api.nim — simple, readable Kyber API
+# kyber.nim — simple, readable Kyber API
 # Flow (at a glance):
 #   1) Each person makes a KeyPair and shares ONLY their publicKey.
 #   2) Sender calls createEnvelope(recipientPublicKey) → (envelope, sessionKey).
