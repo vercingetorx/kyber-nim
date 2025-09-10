@@ -70,8 +70,6 @@ Current default is **Kyber768**. The parameter set is controlled by compiler fla
 -d:kyber1024 # KYBER_K == 4
 ```
 
-(If you prefer build-time switches, you can wrap this in `when defined(kyber512|kyber768|kyber1024)` guards and pass `-d:kyber768`, etc.)
-
 ## Testing (KAT)
 
 A lightweight KAT harness is included (parses NIST `.rsp` files and checks pk/sk/ct/ss).
