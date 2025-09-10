@@ -1,4 +1,4 @@
-# rng.nim — NIST KAT AES-256-CTR DRBG + AES seed expander (rng.c port)
+# rng.nim — NIST KAT AES-256-CTR DRBG + AES seed expander
 
 import std/math
 import ../private/aes/aes
