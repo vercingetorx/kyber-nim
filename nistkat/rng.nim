@@ -3,7 +3,7 @@
 import std/math
 import ../private/aes/aes
 
-# ---- Return codes (match rng.h) ------------------------------------------------
+# ---- Return codes ------------------------------------------------
 const
   RNG_SUCCESS*     = 0
   RNG_BAD_MAXLEN*  = 1
