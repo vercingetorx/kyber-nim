@@ -23,10 +23,10 @@ Kyber lets two parties agree on a **shared 32-byte session key** using only a pu
 
 ## Quick API
 
-Simple, human-readable API (see `api.nim`). “Envelope” = ciphertext you send.
+Simple, human-readable API (see `kyber.nim`). “Envelope” = ciphertext you send.
 
 ```nim
-import api
+import kyber
 
 # 1) Alice creates an identity (public/private keys).
 let alice = generateKeys()  # uses OS randomness
