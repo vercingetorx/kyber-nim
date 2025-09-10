@@ -1,7 +1,7 @@
 # kyber-nim — Pure Nim CRYSTALS-Kyber (KEM)
 
 A **pure Nim** port of the CRYSTALS-Kyber key encapsulation mechanism (post-quantum KEM).
-No C glue required. Uses SHA3/SHAKE (Keccak) and constant-time helpers implemented in Nim.
+Uses SHA3/SHAKE (Keccak) and constant-time helpers implemented in Nim.
 
 Kyber lets two parties agree on a **shared 32-byte session key** using only a public key and a one-shot ciphertext (“envelope”). It’s IND-CCA2 secure and NIST-standardized.
 
