@@ -115,3 +115,5 @@ test/            # basic tests
 nistkat/         # KAT tests
 private/         # crypto backends
 ```
+
+### Note: This code is for reference. It has not been audited and should not be used in production.
