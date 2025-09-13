@@ -37,7 +37,7 @@ let (envelope, bobsSessionKey) = createEnvelope(alice.publicKey)
 
 # 3) Alice opens the received envelope with her PRIVATE key
 #    to obtain the same session key.
-let alicesSessionKey = openEnvelope(alice.privateKey, envelope)
+let alicesSessionKey = openEnvelope(envelope, alice.privateKey)
 
 # 4) Both keys must match; use this 32-byte secret for AEAD, etc.
 doAssert bobsSessionKey == alicesSessionKey
@@ -57,7 +57,7 @@ discard rand(encCoins)
 
 let me = generateKeys(keypairCoins)
 let (env, sk1) = createEnvelope(me.publicKey, encCoins)
-let sk2 = openEnvelope(me.privateKey, env)
+let sk2 = openEnvelope(env, me.privateKey)
 ```
 
 ## Selecting the parameter set
