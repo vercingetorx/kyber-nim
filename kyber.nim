@@ -52,7 +52,7 @@ proc createEnvelope*(recipientPublicKey: openArray[byte],
     crypto_kem_enc_derand(result.envelope, result.sessionKey, recipientPublicKey, coins)
 
 
-proc openEnvelope*(myPrivateKey: openArray[byte], envelope: Envelope): seq[byte] =
+proc openEnvelope*(envelope: Envelope, myPrivateKey: openArray[byte]): seq[byte] =
   ## Finish the exchange: derive the same session key using your private key
   ## and the received envelope.
   if myPrivateKey.len != PrivateKeyBytes: raise newException(ValueError, "openEnvelope: private key length")
@@ -72,7 +72,7 @@ when isMainModule:
   # Bob sends `envForAlice` to Alice (over the network, email, etc.).
 
   # --- Step 3: Alice opens the envelope with her private key ---
-  let aliceSessionKey = openEnvelope(alice.privateKey, envForAlice)
+  let aliceSessionKey = openEnvelope(envForAlice, alice.privateKey)
 
   # Both sides now share the same session key.
   doAssert bobSessionKey == aliceSessionKey
